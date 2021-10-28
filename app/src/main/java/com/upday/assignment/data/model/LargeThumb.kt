@@ -1,4 +1,4 @@
-package com.upday.assignment.data
+package com.upday.assignment.data.model
 
 data class LargeThumb(
     val height: Int,
