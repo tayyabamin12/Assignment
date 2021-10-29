@@ -1,9 +1,9 @@
 # Table of contents
 1. [Title](#assignment)
-2. [Feature](#feature)
+2. [Feature](#features)
 3. [Tech](#tech)
-4. [References](#ref)
-5. [Development](#dev)
+4. [References](#references)
+5. [Development](#development)
 
 # Assignment (Andorid App)
 
