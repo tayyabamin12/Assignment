@@ -22,7 +22,6 @@ The main focus is on a highly performant app (smooth scrolling & lag-free UI)
 App is implemented by using following:
 
 - MVVM Architeture
-  --
 - Paging library
 - Hilt Dagger (Dependency Injection)
 - RX Java 2
