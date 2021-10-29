@@ -1,44 +1,29 @@
 package com.upday.assignment.ui.adapter
 
 import android.content.Context
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.paging.PagedListAdapter
-import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.upday.assignment.R
 import com.upday.assignment.data.model.Data
-import com.upday.assignment.ui.main.NewsViewHolder
-import com.upday.assignment.utils.State
+import dagger.hilt.android.qualifiers.ActivityContext
+import javax.inject.Inject
 
-class NewsListAdapter(private val context: Context)
+class ImagesListAdapter @Inject constructor(@ActivityContext private val context: Context)
     : PagedListAdapter<Data, RecyclerView.ViewHolder>(NewsDiffCallback) {
 
     private val DATA_VIEW_TYPE = 1
-    private val FOOTER_VIEW_TYPE = 2
-
-    private var state = State.LOADING
-
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val imageView: ImageView
-
-        init {
-            imageView = view.findViewById(R.id.iv_image)
-        }
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return NewsViewHolder.create(parent)
+        return ImagesViewHolder.create(parent)
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        (holder as NewsViewHolder).bind(getItem(position), context)
+        (holder as ImagesViewHolder).bind(getItem(position), context)
     }
 
     override fun getItemViewType(position: Int): Int {
-        return if (position < super.getItemCount()) DATA_VIEW_TYPE else FOOTER_VIEW_TYPE
+        return DATA_VIEW_TYPE
     }
 
     companion object {
@@ -55,14 +40,5 @@ class NewsListAdapter(private val context: Context)
 
     override fun getItemCount(): Int {
         return super.getItemCount()
-    }
-
-    private fun hasFooter(): Boolean {
-        return super.getItemCount() != 0 && (state == State.LOADING || state == State.ERROR)
-    }
-
-    fun setState(state: State) {
-        this.state = state
-        notifyItemChanged(super.getItemCount())
     }
 }
