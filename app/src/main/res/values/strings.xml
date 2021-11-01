@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Assignment</string>
+    <string name="reload">Reload</string>
+    <string name="please_check_internet">Please check your internet connection.</string>
 </resources>

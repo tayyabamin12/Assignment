@@ -18,7 +18,7 @@ class ImagesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             Glide
                 .with(context)
                 .load(dataSet.assets.preview.url)
-                .placeholder(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.ic_image_background)
                 .into(imageView)
         }
     }
