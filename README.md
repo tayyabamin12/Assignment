@@ -28,6 +28,8 @@ App is implemented by using following:
 - [Hilt Dagger (Dependency Injection)] - used because it provides a standard way to incorporate Dagger dependency injection into an Android application and also recommended by Google.
 - [RX Java] - It provides a standard workflow that is used to manage all data and events across the application.
 - [Espresso] - It is a testing framework for Android to make it easy to write reliable user interface tests.
+- [Glide] - Glide is a fast and efficient image loading library, used to load images and also recommended by Google.
+- [Fast Android Networking] - used for networking call, its a powerful library for doing any type of networking in Android application.
 
 ## Usage
 
@@ -60,3 +62,5 @@ Want to contribute? Great!
 [Hilt Dagger (Dependency Injection)]: <https://developer.android.com/training/dependency-injection/hilt-android>
 [RX Java]: <https://github.com/ReactiveX/RxJava>
 [Espresso]: <https://developer.android.com/training/testing/espresso>
+[Glide]: <https://github.com/bumptech/glide>
+[Fast Android Networking]: <https://github.com/amitshekhariitbhu/Fast-Android-Networking>
