@@ -51,8 +51,8 @@ Want to contribute? Great!
 
 [//]: # (These are reference links used in the body of this note.)
 
-[Shutterstock]: (https://accounts.shutterstock.com/)
-[developers page]: (https://www.shutterstock.com/account/developers/apps)
+[Shutterstock]: <https://accounts.shutterstock.com/>
+[developers page]: <https://www.shutterstock.com/account/developers/apps>
 [Kotlin language]: <https://developer.android.com/kotlin>
 [Shutterstock API]: <http://api.shutterstock.com/>
 [MVVM Architecture Pattern]: <https://blog.mindorks.com/mvvm-architecture-android-tutorial-for-beginners-step-by-step-guide>
