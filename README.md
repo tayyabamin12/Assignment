@@ -55,6 +55,7 @@ App is implemented by using following:
 ## References
 
 Shutterstock API documentation is here: https://www.shutterstock.com/developers/documentation.
+
 A Gradle plugin for providing your secrets securely to your Android project: https://github.com/google/secrets-gradle-plugin
 
 ## Development
