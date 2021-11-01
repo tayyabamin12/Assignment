@@ -1,8 +1,8 @@
 # Table of contents
 1. [Title](#assignment)
 2. [Feature](#features)
-3. [Tech](#tech)
-4. [Usage](#Usage)
+3. [Usage](#Usage)
+4. [Tech](#tech)
 5. [References](#references)
 6. [Development](#development)
 
@@ -18,6 +18,15 @@ This repository contains a sample app that fetches pictures from the [Shuttersto
 
 The main focus is on a highly performant app (smooth scrolling & lag-free UI)
 
+## Usage
+
+If you want to run this application, do the following steps.
+- Create an account and sign in here [Shutterstock].
+- Go to [developers page] and create an app.
+- Generate Token and copy the token.
+- place your own *TOKEN* in **local.properties** file as below.
+  > `apiKey=YOUR_TOKEN`
+  
 ## Tech
 
 App is implemented by using following:
@@ -30,17 +39,6 @@ App is implemented by using following:
 - [Espresso] - It is a testing framework for Android to make it easy to write reliable user interface tests.
 - [Glide] - Glide is a fast and efficient image loading library, used to load images and also recommended by Google.
 - [Fast Android Networking] - used for networking call, its a powerful library for doing any type of networking in Android application.
-
-## Usage
-
-If you want to run this application, do the following steps.
-- Create an account and sign in here [Shutterstock].
-- Go to [developers page] and create an app.
-- Generate Token and copy the token.
-- place your own *TOKEN* in **local.properties** file as below.
-  > `apiKey=YOUR_TOKEN`
-
-
 
 ## References
 
